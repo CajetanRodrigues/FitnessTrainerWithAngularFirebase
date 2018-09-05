@@ -1,8 +1,8 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material';
 
 import { StopTrainingComponent } from './stop-training.component';
-import {ExerciseService} from "../exercise.service";
+import { TrainingService } from '../exercise.service';
 
 @Component({
   selector: 'app-current-training',
@@ -10,49 +10,40 @@ import {ExerciseService} from "../exercise.service";
   styleUrls: ['./current-training.component.css']
 })
 export class CurrentTrainingComponent implements OnInit {
-
   progress = 0;
-  timer : number;
-  step : number;
-  id : number;
-  name : string;
-  duration : number;
-  calories : number;
-  constructor(private dialog: MatDialog , private  exerciseService : ExerciseService) {}
+  timer: number;
+
+  constructor(private dialog: MatDialog, private trainingService: TrainingService) {}
 
   ngOnInit() {
     this.startOrResumeTimer();
-    this.id = this.exerciseService.getRunningExercise().id
-    this.name = this.exerciseService.getRunningExercise().name
-    this.duration = this.exerciseService.getRunningExercise().duration
-    this.calories = this.exerciseService.getRunningExercise().calories
-
   }
 
   startOrResumeTimer() {
-    this.step = this.exerciseService.getRunningExercise().duration / 100 *1000;
+    const step = this.trainingService.getRunningExercise().duration / 100 * 1000;
     this.timer = setInterval(() => {
       this.progress = this.progress + 1;
       if (this.progress >= 100) {
-        this.exerciseService.completeExercise();
+        this.trainingService.completeExercise();
         clearInterval(this.timer);
       }
-    }, this.step);
+    }, step);
   }
 
   onStop() {
-    clearInterval(this.timer);
-    const dialogRef = this.dialog.open(StopTrainingComponent, {
+    clearInterval(this.timer); // Stop the timer
+
+    const dialogRef = this.dialog.open(StopTrainingComponent, { // Open the dialog
       data: {
         progress: this.progress
       }
     });
-    // subscribe the data from the dialog
+
     dialogRef.afterClosed().subscribe(result => {
       if (result) {
-        this.exerciseService.cancelExercise(this.progress)
+        this.trainingService.cancelExercise(this.progress);
       } else {
-        this.exerciseService.completeExercise();
+        this.startOrResumeTimer();
       }
     });
   }

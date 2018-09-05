@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
@@ -11,14 +14,15 @@ import { LoginComponent } from './auth/login/login.component';
 import { TrainingComponent } from './training/training.component';
 import { CurrentTrainingComponent } from './training/current-training/current-training.component';
 import { NewTrainingComponent } from './training/new-training/new-training.component';
+import { PastTrainingsComponent } from './training/past-trainings/past-trainings.components';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav/sidenav-list.component';
 import { StopTrainingComponent } from './training/current-training/stop-training.component';
 import { AuthService } from './auth/auth.service';
-import {PastTrainingsComponent} from "./training/past-trainings/past-trainings.components";
-import {SidenavListComponent} from "./navigation/sidenav/sidenav-list.component";
-import {ExerciseService} from "./training/exercise.service";
+import { TrainingService } from './training/exercise.service';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -33,9 +37,7 @@ import {ExerciseService} from "./training/exercise.service";
     WelcomeComponent,
     HeaderComponent,
     SidenavListComponent,
-    StopTrainingComponent,
-
-
+    StopTrainingComponent
   ],
   imports: [
     BrowserModule,
@@ -44,10 +46,14 @@ import {ExerciseService} from "./training/exercise.service";
     AppRoutingModule,
     FlexLayoutModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    AngularFireAuthModule
   ],
-  providers: [AuthService,ExerciseService],
+  providers: [AuthService, TrainingService],
   bootstrap: [AppComponent],
-  entryComponents: [StopTrainingComponent]
+  entryComponents: [StopTrainingComponent] // tells angular this component can be loaded
+  // at  any instance of time
 })
 export class AppModule { }

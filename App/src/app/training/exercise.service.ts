@@ -1,52 +1,91 @@
-import {ExerciseModel} from "./exercise.model";
-import {Subject} from "rxjs/Subject";
+import { Injectable } from '@angular/core';
+import { AngularFirestore } from 'angularfire2/firestore';
+import { Subject } from 'rxjs/Subject';
+import { Subscription } from 'rxjs';
 
+import { ExerciseModel } from './exercise.model';
+import "rxjs-compat/add/operator/map";
 
-export class ExerciseService{
+@Injectable()
+  export class TrainingService {
+  exerciseChanged = new Subject<ExerciseModel>();
+  exercisesChanged = new Subject<ExerciseModel[]>(); // Bridge between past-training and service
+  finishedExercisesChanged = new Subject<ExerciseModel[]>();
+  private availableExercises: ExerciseModel[] = []; // Fetch data from database into availExer.
+  private runningExercise: ExerciseModel; // Bridge between newExer compo and currExerCompo
+  private fbSubs: Subscription[] = [];
 
-  // Beans class
-  private availableExcercises : ExerciseModel[] = [
-    {id : 1 , name : 'squats', duration : 10, calories : 100},
-    {id : 2, name : 'push ups', duration : 30, calories : 150},
-    {id : 3 , name : 'hand stand', duration : 8, calories : 60}
-  ];
-  private completedExercises : ExerciseModel[] = [];
-  private  runningExercise : ExerciseModel;
-   exerciseChanged = new Subject();
+  constructor(private db: AngularFirestore) {}
 
-  getExercises(){
-    return this.availableExcercises.slice(); // returns exact copy of array
+  fetchAvailableExercises() {
+    this.fbSubs.push(this.db
+      .collection('availableExercises')
+      .snapshotChanges()
+      .map(docArray => {
+        return docArray.map(doc => {
+          return {
+            id: doc.payload.doc.id,
+            name: doc.payload.doc.data().name,
+            duration: doc.payload.doc.data().duration,
+            calories: doc.payload.doc.data().calories
+          };
+        });
+      })
+      .subscribe((exercises: ExerciseModel[]) => {
+        this.availableExercises = exercises;
+        this.exercisesChanged.next([...this.availableExercises]);
+      }));
   }
-  onStartTraining(selectedId : number){
-    // find method here works same like predicate interface in java
-    this.runningExercise = this.availableExcercises.find(ex => ex.id == selectedId);
-    this.exerciseChanged.next({...this.runningExercise})
+
+  startExercise(selectedId: string) {
+    // this.db.doc('availableExercises/' + selectedId).update({lastSelected: new Date()});
+    this.runningExercise = this.availableExercises.find(
+      ex => ex.id === selectedId
+    );
+    this.exerciseChanged.next({ ...this.runningExercise });
   }
-  getRunningExercise()
-  {
-    return {...this.runningExercise}
-  }
-  completeExercise(){
-    this.completedExercises.push({
-      ...this.runningExercise ,
-      date: new Date() ,
-      state: 'completed'})
+
+  completeExercise() { //This function and below function are similar
+    this.addDataToDatabase({
+      ...this.runningExercise,
+      date: new Date(),
+      state: 'completed'
+    });
     this.runningExercise = null;
     this.exerciseChanged.next(null);
   }
-  cancelExercise(progress : number){
-    this.completedExercises.push({
-      ...this.runningExercise ,
-      duration : this.runningExercise.duration * (progress/100),
-      calories : this.runningExercise.duration * (progress/100),
-      date: new Date() ,
-      state: 'cancelled'})
+
+  cancelExercise(progress: number) {
+    this.addDataToDatabase({
+      ...this.runningExercise,
+      duration: this.runningExercise.duration * (progress / 100),
+      calories: this.runningExercise.calories * (progress / 100),
+      date: new Date(),
+      state: 'cancelled'
+    });
     this.runningExercise = null;
     this.exerciseChanged.next(null);
-
   }
-  getCompletedOrCancelledExcercises()
-  {
-    return this.completedExercises.slice();
+
+  getRunningExercise() {
+    return { ...this.runningExercise }; // ReStructure into JSON data
+  }
+
+  fetchCompletedOrCancelledExercises() { // Fetch the data from database and store it in the
+    // local Subscription array and pass it to past-training
+    this.fbSubs.push(this.db.collection('finishedExercises')
+      .valueChanges()
+      .subscribe((exercises: ExerciseModel[]) => {
+        this.finishedExercisesChanged.next(exercises);
+      }));
+  }
+
+  cancelSubscriptions() {
+    this.fbSubs.forEach(sub => sub.unsubscribe());
+  }
+
+  private addDataToDatabase(exercise: ExerciseModel) {
+    this.db.collection('finishedExercises').add(exercise); //
+    // Adds all past exercises in the same collection named as finishedExercises
   }
 }

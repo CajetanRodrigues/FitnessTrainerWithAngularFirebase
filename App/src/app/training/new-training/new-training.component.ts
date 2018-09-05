@@ -1,27 +1,38 @@
-import { Component, OnInit, EventEmitter, Output } from '@angular/core';
-import {ExerciseService} from "../exercise.service";
-import {ExerciseModel} from "../exercise.model";
-import {NgForm} from "@angular/forms";
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import {Subscription } from 'rxjs';
+
+
+import { TrainingService } from '../exercise.service';
+import { ExerciseModel } from '../exercise.model';
 
 @Component({
   selector: 'app-new-training',
   templateUrl: './new-training.component.html',
   styleUrls: ['./new-training.component.css']
 })
-export class NewTrainingComponent implements OnInit {
-   availableExercises: ExerciseModel[] = [];
+export class NewTrainingComponent implements OnInit, OnDestroy {
+  exercises: ExerciseModel[];
+  exerciseSubscription: Subscription;
 
-  constructor(private exerciseService : ExerciseService  ) {
-
-  }
+  constructor(private trainingService: TrainingService) {}
 
   ngOnInit() {
+    this.trainingService.fetchAvailableExercises();
+    // step 1 :After the above statement , data is fetched from server and stored in service
+    this.exerciseSubscription = this.trainingService.exercisesChanged.subscribe(
+      exercises => (this.exercises = exercises)
+    );
+    // step 2 : After the above statement , we subscribe to the subject created in service
 
-      this.availableExercises = this.exerciseService.getExercises();
+
   }
 
-  onStartTraining(selectedId : NgForm) {
-    this.exerciseService.onStartTraining(selectedId.value.exercise);
+  onStartTraining(form: NgForm) {
+    this.trainingService.startExercise(form.value.exercise);
   }
 
+  ngOnDestroy() {
+    this.exerciseSubscription.unsubscribe();
+  }
 }

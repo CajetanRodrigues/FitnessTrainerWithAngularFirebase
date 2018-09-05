@@ -8,7 +8,7 @@ import { TrainingComponent } from './training/training.component';
 import { AuthGuard } from './auth/auth.guard';
 
 const routes: Routes = [
-  { path: '', component: WelcomeComponent },
+  { path: '', component: WelcomeComponent }, // Initial state of the Application
   { path: 'signup', component: SignupComponent },
   { path: 'login', component: LoginComponent },
   { path: 'training', component: TrainingComponent, canActivate: [AuthGuard] }
@@ -19,4 +19,4 @@ const routes: Routes = [
   exports: [RouterModule],
   providers: [AuthGuard]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {} // This module is registered in app.module.ts

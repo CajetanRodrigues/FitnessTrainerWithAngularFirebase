@@ -1,14 +1,6 @@
 <section class="current-training" fxLayout="column" fxLayoutAlign="center center">
   <mat-progress-spinner mode="determinate" [value]="progress"></mat-progress-spinner>
   <h1>{{ progress }}%</h1>
-  <h1></h1>
-  <p></p>
-  <p></p>
-  <ul class="list-group">
-    <li class="list-group-item list-group-item-primary">Name : {{name}}</li>
-    <li class="list-group-item">Duration : {{duration}}</li>
-    <li class="list-group-item ">Calories : {{calories}}</li>
-  </ul>
   <p>Keep on going, you can do it!</p>
   <button mat-raised-button color="accent" (click)="onStop()">Stop</button>
 </section>

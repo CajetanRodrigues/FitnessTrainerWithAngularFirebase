@@ -1,3 +1,4 @@
+// Restrict some components from being accessed if the user has signed out.
 import { Injectable } from '@angular/core';
 import {
   CanActivate,
@@ -8,7 +9,7 @@ import {
 
 import { AuthService } from './auth.service';
 
-@Injectable()
+@Injectable() // injecting a service inside a service
 export class AuthGuard implements CanActivate {
   constructor(private authService: AuthService, private router: Router) {}
 

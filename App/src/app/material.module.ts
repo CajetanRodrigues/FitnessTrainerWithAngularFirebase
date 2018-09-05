@@ -40,7 +40,6 @@ import {
     MatTableModule,
     MatSortModule,
     MatPaginatorModule
-
   ],
   exports: [
     MatButtonModule,
@@ -60,8 +59,7 @@ import {
     MatDialogModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule,
-
+    MatPaginatorModule
   ]
 })
-export class MaterialModule {}
+export class MaterialModule {} // This module is registered in app.module.ts
