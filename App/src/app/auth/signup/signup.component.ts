@@ -10,6 +10,7 @@ import { AuthService } from '../auth.service';
 })
 export class SignupComponent implements OnInit {
   maxDate;
+  loginForm : NgForm;
 
   constructor(private authService: AuthService) { }
 
@@ -24,5 +25,6 @@ export class SignupComponent implements OnInit {
       password: form.value.password
     });
   }
+
 
 }

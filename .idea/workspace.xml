@@ -3,31 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3477ffe9-5195-4270-8e63-a6242721d6d7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/App/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/App/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/auth/auth-data.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/auth/auth-data.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/auth/auth.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/auth/auth.guard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/auth/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/auth/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/auth/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/auth/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/auth/login/login.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/app/auth/signup/signup.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/auth/signup/signup.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/material.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/material.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/training/current-training/current-training.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/training/current-training/current-training.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/training/current-training/current-training.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/training/current-training/current-training.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/training/current-training/stop-training.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/training/current-training/stop-training.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/training/exercise.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/training/exercise.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/app/auth/signup/signup.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/auth/signup/signup.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App/src/app/training/exercise.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/training/exercise.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/training/new-training/new-training.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/training/new-training/new-training.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/training/new-training/new-training.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/training/new-training/new-training.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/training/past-trainings/past-trainings.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/training/past-trainings/past-trainings.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/training/past-trainings/past-trainings.components.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/training/past-trainings/past-trainings.components.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/training/training.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/training/training.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/app/training/training.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/app/training/training.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/App/src/environments/environment.prod.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -44,8 +23,8 @@
       <file leaf-file-name="exercise.service.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/src/app/training/exercise.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1113">
-              <caret line="13" column="95" selection-start-line="13" selection-start-column="95" selection-end-line="13" selection-end-column="95" />
+            <state relative-caret-position="197">
+              <caret line="29" column="70" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
               <folding>
                 <element signature="e#0#43#0" expanded="true" />
               </folding>
@@ -53,92 +32,68 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="training.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/src/app/training/training.component.ts">
+      <file leaf-file-name="signup.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/src/app/auth/signup/signup.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+            <state relative-caret-position="252">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="past-trainings.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/src/app/training/past-trainings/past-trainings.component.html">
+      <file leaf-file-name="auth.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/src/app/auth/auth.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-349">
+              <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/src/app/auth/signup/signup.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/src/app/auth/login/login.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="firebase.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/firebase.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/src/app/navigation/header/header.component.ts">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new-training.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/src/app/training/new-training/new-training.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new-training.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/src/app/training/new-training/new-training.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
+            <state relative-caret-position="273">
+              <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
               <folding>
-                <element signature="e#0#61#0" expanded="true" />
+                <element signature="e#2262#2270#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="past-trainings.components.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/App/src/app/training/past-trainings/past-trainings.components.ts">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
-              <folding>
-                <element signature="e#0#87#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="current-training.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/src/app/training/current-training/current-training.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-105">
-              <caret line="22" column="56" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="56" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stop-training.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/src/app/training/current-training/stop-training.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="current-training.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/src/app/training/current-training/current-training.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+            <state relative-caret-position="294">
+              <caret line="14" column="6" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -151,9 +106,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/App/src/main.ts" />
-        <option value="$PROJECT_DIR$/App/angular.json" />
-        <option value="$PROJECT_DIR$/App/src/styles.css" />
         <option value="$PROJECT_DIR$/App/src/app/auth/login/login.component.css" />
         <option value="$PROJECT_DIR$/App/src/app/auth/signup/signup.component.css" />
         <option value="$PROJECT_DIR$/App/src/app/navigation/header/header.component.css" />
@@ -178,7 +130,6 @@
         <option value="$PROJECT_DIR$/App/package.json" />
         <option value="$PROJECT_DIR$/node_modules/angularfire2/firebase.app.module.d.ts" />
         <option value="$PROJECT_DIR$/App/node_modules/angularfire2/firebase.app.module.d.ts" />
-        <option value="$PROJECT_DIR$/App/src/app/auth/signup/signup.component.ts" />
         <option value="$PROJECT_DIR$/App/src/app/training/current-training/current-training.component.html" />
         <option value="$PROJECT_DIR$/App/src/app/training/past-trainings/past-trainings.component.html" />
         <option value="$PROJECT_DIR$/App/src/app/training/training.component.html" />
@@ -191,7 +142,6 @@
         <option value="$PROJECT_DIR$/App/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/App/src/app/auth/login/login.component.ts" />
         <option value="$PROJECT_DIR$/App/src/app/auth/login/login.component.html" />
-        <option value="$PROJECT_DIR$/App/src/app/auth/signup/signup.component.html" />
         <option value="$PROJECT_DIR$/App/src/app/auth/auth.guard.ts" />
         <option value="$PROJECT_DIR$/App/src/app/auth/auth.service.ts" />
         <option value="$PROJECT_DIR$/App/src/app/auth/auth-data.model.ts" />
@@ -199,8 +149,14 @@
         <option value="$PROJECT_DIR$/App/src/app/training/new-training/new-training.component.ts" />
         <option value="$PROJECT_DIR$/App/src/app/training/current-training/current-training.component.ts" />
         <option value="$PROJECT_DIR$/App/src/app/training/current-training/stop-training.component.ts" />
-        <option value="$PROJECT_DIR$/App/src/app/training/exercise.service.ts" />
         <option value="$PROJECT_DIR$/App/src/app/training/past-trainings/past-trainings.components.ts" />
+        <option value="$PROJECT_DIR$/App/src/environments/environment.prod.ts" />
+        <option value="$PROJECT_DIR$/App/public/index.html" />
+        <option value="$PROJECT_DIR$/App/src/app/training/exercise.service.ts" />
+        <option value="$PROJECT_DIR$/App/src/app/auth/signup/signup.component.ts" />
+        <option value="$PROJECT_DIR$/App/src/app/auth/signup/signup.component.html" />
+        <option value="$PROJECT_DIR$/App/dist/index.html" />
+        <option value="$PROJECT_DIR$/App/firebase.json" />
       </list>
     </option>
   </component>
@@ -248,57 +204,7 @@
               <item name="FitnessTracker" type="b2602c69:ProjectViewProjectNode" />
               <item name="FitnessTracker" type="462c0819:PsiDirectoryNode" />
               <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FitnessTracker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FitnessTracker" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FitnessTracker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FitnessTracker" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FitnessTracker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FitnessTracker" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FitnessTracker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FitnessTracker" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
-              <item name="signup" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FitnessTracker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FitnessTracker" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="training" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FitnessTracker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FitnessTracker" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="training" type="462c0819:PsiDirectoryNode" />
-              <item name="past-trainings" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -315,6 +221,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Projs\Angular\FitnessTracker\App\dist" />
       <recent name="E:\Projs\Angular\FitnessTracker\App\src\app\auth" />
     </key>
   </component>
@@ -352,14 +259,16 @@
       <workItem from="1536125867039" duration="799000" />
       <workItem from="1536126944974" duration="2291000" />
       <workItem from="1536152813182" duration="10846000" />
+      <workItem from="1536244091714" duration="1193000" />
+      <workItem from="1536293277116" duration="4121000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82591000" />
+    <option name="totallyTimeSpent" value="87905000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="11" />
@@ -389,46 +298,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/App/src/app/training/new-training/new-training.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/app/training/training.component.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/app/welcome/welcome.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/app/navigation/sidenav/sidenav-list.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/app/navigation/sidenav/sidenav-list.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/src/app/training/new-training/new-training.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/app/training/past-trainings/past-trainings.component.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -471,13 +342,6 @@
     <entry file="file://$PROJECT_DIR$/App/src/app/auth/login/login.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/app/auth/signup/signup.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/src/app/training/training.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -489,16 +353,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="10" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/environments/environment.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="13" selection-end-column="3" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -518,11 +372,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/app/app.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-252">
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-252" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/app/app.component.css">
@@ -543,19 +393,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="21" column="78" selection-start-line="21" selection-start-column="78" selection-end-line="21" selection-end-column="78" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="45" column="20" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -563,9 +400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -590,27 +424,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/app/auth/login/login.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="31" column="7" lean-forward="true" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/App/src/app/auth/login/login.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/app/auth/signup/signup.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" selection-start-column="31" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -625,19 +442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-189">
           <caret column="75" selection-start-column="75" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/app/auth/auth.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="36" column="37" lean-forward="true" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -657,7 +461,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/app/navigation/header/header.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
+        <state relative-caret-position="693">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
@@ -665,13 +469,13 @@
     <entry file="file://$PROJECT_DIR$/App/src/app/training/new-training/new-training.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/app/training/new-training/new-training.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="399">
           <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
           <folding>
             <element signature="e#0#61#0" expanded="true" />
@@ -682,7 +486,7 @@
     <entry file="file://$PROJECT_DIR$/App/src/app/training/current-training/current-training.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -695,7 +499,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/app/training/current-training/current-training.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
+        <state relative-caret-position="378">
           <caret line="22" column="56" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="56" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
@@ -705,7 +509,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/app/training/past-trainings/past-trainings.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
+        <state relative-caret-position="798">
           <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
@@ -713,27 +517,114 @@
     <entry file="file://$PROJECT_DIR$/App/src/app/training/training.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/app/training/past-trainings/past-trainings.components.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10">
+          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/environments/environment.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" selection-start-line="6" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/environments/environment.prod.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="6" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/App/src/app/training/exercise.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1113">
-          <caret line="13" column="95" selection-start-line="13" selection-start-column="95" selection-end-line="13" selection-end-column="95" />
+        <state relative-caret-position="197">
+          <caret line="29" column="70" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
           <folding>
             <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/App/src/app/training/past-trainings/past-trainings.components.ts">
+    <entry file="file://$PROJECT_DIR$/App/src/app/auth/auth.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="29" column="62" selection-start-line="29" selection-start-column="62" selection-end-line="29" selection-end-column="62" />
+        <state relative-caret-position="-349">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/app/auth/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="32" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/app/auth/signup/signup.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
           <folding>
-            <element signature="e#0#87#0" expanded="true" />
+            <element signature="e#2262#2270#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/firebase.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/src/app/auth/signup/signup.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="31" column="9" lean-forward="true" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
         </state>
       </provider>
     </entry>

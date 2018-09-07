@@ -5,6 +5,7 @@ import { Subscription } from 'rxjs';
 
 import { ExerciseModel } from './exercise.model';
 import "rxjs-compat/add/operator/map";
+import {map} from "rxjs/operators";
 
 @Injectable()
   export class TrainingService {
@@ -20,17 +21,16 @@ import "rxjs-compat/add/operator/map";
   fetchAvailableExercises() {
     this.fbSubs.push(this.db
       .collection('availableExercises')
-      .snapshotChanges()
-      .map(docArray => {
-        return docArray.map(doc => {
-          return {
-            id: doc.payload.doc.id,
-            name: doc.payload.doc.data().name,
-            duration: doc.payload.doc.data().duration,
-            calories: doc.payload.doc.data().calories
-          };
-        });
-      })
+            .snapshotChanges().pipe(    map(docArray => {
+                      return docArray.map(doc => {
+                        return {
+                          id: doc.payload.doc.id,
+                          name: doc.payload.doc.data()['name'],
+                          duration: doc.payload.doc.data()['duration'],
+                          calories: doc.payload.doc.data()['calories']
+                        };
+                      });
+                    })      )
       .subscribe((exercises: ExerciseModel[]) => {
         this.availableExercises = exercises;
         this.exercisesChanged.next([...this.availableExercises]);
